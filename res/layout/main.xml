@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget32"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/flip1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:text="title"
+        android:textSize="50sp" />
+
+    <!-- 提供动画层，对展开之后的控件进行动画展示控制-->
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="200dp"
+        android:layout_height="350dp"
+        android:layout_below="@+id/flip1"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/flip2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/flip1"
+        android:background="@android:color/white"
+        android:text="折叠展出"
+        android:textSize="50sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button_Rotate"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/flip2"
+        android:text="Rotate动画"
+        android:textSize="44sp" 
+        android:visibility="gone">
+    </Button>
+
+</RelativeLayout>
